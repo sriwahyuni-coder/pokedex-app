@@ -80,7 +80,6 @@ class PokemonListViewModel @Inject constructor(
 
         Palette.from(bpm).generate { palette ->
             palette?.dominantSwatch?.rgb?.let { colorValue ->
-                Log.e("BPM", colorValue.toString())
                 onFinish(Color(colorValue))
             }
         }
